@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>QIAN BLOG</title>
+  <subtitle>个人技术博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-20T02:19:37.081Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>YHM</name>
+    <email>cn_yhm@163.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习路线</title>
+    <link href="http://yoursite.com/2018/05/19/Python%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    <id>http://yoursite.com/2018/05/19/Python学习路线/</id>
+    <published>2018-05-19T15:24:32.000Z</published>
+    <updated>2018-05-20T02:19:37.081Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="python基础知识"><a href="#python基础知识" class="headerlink" title="python基础知识"></a>python基础知识</h3><h3 id="Python手册"><a href="#Python手册" class="headerlink" title="Python手册"></a><a href="http://docs.pythontab.com/" target="_blank" rel="external">Python手册</a></h3><ul>
+<li><a href="https://www.runoob.com/python3/python3-tutorial.html" target="_blank" rel="external">python基础教程</a>  </li>
+</ul>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><ul>
+<li><a href="https://www.runoob.com/regexp/regexp-tutorial.html" target="_blank" rel="external">正则表达式</a></li>
+<li><a href="https://www.runoob.com/xpath/xpath-tutorial.html" target="_blank" rel="external">XPath表达式</a></li>
+</ul>
+<h3 id="掌握urllib模块"><a href="#掌握urllib模块" class="headerlink" title="掌握urllib模块"></a>掌握urllib模块</h3><ul>
+<li><a href="http://urllib3.readthedocs.io/en/latest/reference/index.html" target="_blank" rel="external">Urllib手册</a>  <h3 id="掌握抓包技术Fiddler"><a href="#掌握抓包技术Fiddler" class="headerlink" title="掌握抓包技术Fiddler"></a>掌握抓包技术Fiddler</h3></li>
+<li><a href="http://www.jianshu.com/p/99b6b4cd273c" target="_blank" rel="external">简书Fiddler教程</a>  </li>
+<li><a href="http://docs.telerik.com/fiddler/configure-fiddler/tasks/configurefiddler" target="_blank" rel="external">Fiddler手册</a></li>
+</ul>
+<h3 id="掌握Scrapy框架"><a href="#掌握Scrapy框架" class="headerlink" title="掌握Scrapy框架"></a>掌握Scrapy框架</h3><ul>
+<li><a href="http://docs.pythontab.com/scrapy/scrapy0.24/" target="_blank" rel="external">Scrapy手册</a></li>
+</ul>
+<h3 id="掌握常见的反爬策略与反爬处理策略"><a href="#掌握常见的反爬策略与反爬处理策略" class="headerlink" title="掌握常见的反爬策略与反爬处理策略"></a>掌握常见的反爬策略与反爬处理策略</h3><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/20520370?columnSlug=python-hacker" target="_blank" rel="external">反爬虫策略</a></li>
+</ul>
+<h3 id="掌握PhantomJS、Selenium等工具的使用"><a href="#掌握PhantomJS、Selenium等工具的使用" class="headerlink" title="掌握PhantomJS、Selenium等工具的使用"></a>掌握PhantomJS、Selenium等工具的使用</h3><ul>
+<li><a href="http://www.jianshu.com/p/520749be7377" target="_blank" rel="external">PhantomJS,Selenium教程</a>  </li>
+<li><a href="http://phantomjs.org/documentation/" target="_blank" rel="external">PhantomJS手册</a></li>
+<li><a href="http://www.seleniumhq.org/" target="_blank" rel="external">Selenium手册</a></li>
+</ul>
+<h3 id="掌握分布式爬虫技术与数据去重技术"><a href="#掌握分布式爬虫技术与数据去重技术" class="headerlink" title="掌握分布式爬虫技术与数据去重技术"></a>掌握分布式爬虫技术与数据去重技术</h3><ul>
+<li><a href="http://www.cnblogs.com/qiyeboy/p/7016540.html" target="_blank" rel="external">简单分布式爬虫</a></li>
+<li><a href="http://blog.csdn.net/babyfish13/article/details/53544019" target="_blank" rel="external">数据去重</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;python基础知识&quot;&gt;&lt;a href=&quot;#python基础知识&quot; class=&quot;headerlink&quot; title=&quot;python基础知识&quot;&gt;&lt;/a&gt;python基础知识&lt;/h3&gt;&lt;h3 id=&quot;Python手册&quot;&gt;&lt;a href=&quot;#Python手册&quot; cla
+    
+    </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL Server基础</title>
+    <link href="http://yoursite.com/2018/05/19/SQL%20Server%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2018/05/19/SQL Server基础/</id>
+    <published>2018-05-19T13:47:56.000Z</published>
+    <updated>2018-05-19T15:32:46.865Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title=" 创建数据库"></a> 创建数据库</h2><p><strong>语法：</strong> <em>CREATE DATABASE 数据库名称</em></p>
+<pre><code>实例：CREATE DATABASE TDB_SQL   
+</code></pre><h2 id="切换到相应数据库下"><a href="#切换到相应数据库下" class="headerlink" title=" 切换到相应数据库下"></a> 切换到相应数据库下</h2><p><strong>语法：</strong> <em>USE 数据库名称</em></p>
+<pre><code>USE TDB_SQL
+</code></pre><h2 id="创建数据表"><a href="#创建数据表" class="headerlink" title=" 创建数据表"></a> 创建数据表</h2><p><strong>语法:</strong> <em>CREATE TABLE 表格名(列明 属性信息，…)</em></p>
+<pre><code>CREATE TABLE customer(Frist_Name char(50),Last_Name char(50),Address char(100),City char(50),Country char(50),Brith_Date date)
+</code></pre><h2 id="数据库添加列"><a href="#数据库添加列" class="headerlink" title=" 数据库添加列"></a> 数据库添加列</h2><p><strong>语法:</strong> <em>ALTER TABLE 表格名 ADD 添加的列名 列名属性信息</em></p>
+<pre><code>ALTER TABLE Coustomer Add AddCol char(50) NOT NULL
+</code></pre><h2 id="删除列"><a href="#删除列" class="headerlink" title=" 删除列"></a> 删除列</h2><p><strong>语法:</strong> <em>ALTER TABLE 表格名 DROP COLUMN 要删除的列名</em></p>
+<pre><code>ALTER TABLE Coustomer DROP COLUMN ReCol
+</code></pre><h2 id="删除表"><a href="#删除表" class="headerlink" title=" 删除表"></a> 删除表</h2><pre><code>DROP TABLE 用户信息表
+</code></pre><h2 id="清除表格中的所有数据"><a href="#清除表格中的所有数据" class="headerlink" title=" 清除表格中的所有数据"></a> 清除表格中的所有数据</h2><p><strong>语法：TRUNCATE TABLE 表格名称</strong></p>
+<pre><code>TRUNCATE TABLE customer_one
+</code></pre><h2 id="更改列名称"><a href="#更改列名称" class="headerlink" title=" 更改列名称"></a> 更改列名称</h2><p><strong>语法:</strong> <em>sp_rename ‘表格名.列名’,更改后的列名,’COLUMN’</em></p>
+<pre><code>sp_rename &apos;Coustomer.AddCol&apos;,ReCol ,&apos;COLUMN&apos;
+</code></pre><h2 id="插入语句"><a href="#插入语句" class="headerlink" title=" 插入语句"></a> 插入语句</h2><p><strong>语法：（单行插入）</strong>  <em>INSERT INTO 表格名(列名1,列名2，…) VALUES (列名1对应值,列名2对应值,…)</em><br><strong>语法：（多行行插入）</strong> <em>INSERT INTO 表格名(列名1,列名2，…) VALUES (列名1对应值,列名2对应值,…),(列名1对应值,列名2对应值,…)…</em></p>
+<pre><code>INSERT INTO customer(Frist_Name,Last_Name,Address,City,Country,Brith_Date) VALUES(&apos;f1&apos;,&apos;L1&apos;,&apos;A1&apos;,&apos;C1&apos;,&apos;COU1&apos;,NULL),(&apos;f2&apos;,&apos;L2&apos;,&apos;A2&apos;,&apos;C2&apos;,&apos;COU2&apos;,NULL)
+</code></pre><h2 id="查询数据"><a href="#查询数据" class="headerlink" title=" 查询数据"></a> 查询数据</h2><p><strong>语法</strong> <em>SELECT 列名 FROM 表格名</em></p>
+<pre><code>SELECT UserName FROM Coustomer
+SELECT UserName,City FROM Coustomer
+</code></pre><p><strong>去掉查找到重复的数据</strong></p>
+<pre><code>SELECT DISTINCT Country FROM Coustomer
+</code></pre><h2 id="更改内容"><a href="#更改内容" class="headerlink" title=" 更改内容"></a> 更改内容</h2><pre><code>UPDATE TestTABLE SET name=&apos;6&apos;
+</code></pre><h2 id="关键字"><a href="#关键字" class="headerlink" title=" 关键字"></a> 关键字</h2><ul>
+<li><strong>WHERE 关键字:条件过滤</strong></li>
+</ul>
+<p><em>语法:SELECT “列名” FROM “表格名” WHERE “条件”</em></p>
+<pre><code>SELECT UserName,City,Country FROM Coustomer WHERE Country=&apos;中国&apos; AND City=&apos;武汉&apos;
+</code></pre><p><strong>IN 关键字1.与WHERE有多个相等的值时</strong></p>
+<pre><code>SELECT UserName,City,Country FROM Coustomer WHERE Country IN (&apos;中国&apos;,&apos;jp&apos;)
+</code></pre><ul>
+<li><strong>LIKE关键字</strong>  </li>
+</ul>
+<p><em>语法：SELECT 列名 FROM 表格名 WHERE 列名 LIKE{模式}</em></p>
+<pre><code>SELECT UserName,City,Country FROM Coustomer WHERE  Country LIKE&apos;%国&apos; OR Country LIKE&apos;%P&apos;
+</code></pre><ul>
+<li><strong>ORDER BY 关键字ASC 从小到大，DESC 从大到小，默认是ASC</strong></li>
+</ul>
+<p><em>语法：<br>SELECT 列名<br>FROM 表格名<br>WHERE  条件 ORDER BY 列名 [ASC,DESC]</em></p>
+<pre><code>SELECT UserName,City,Country FROM Coustomer ORDER BY UserName DESC
+</code></pre><ul>
+<li><strong>函数</strong></li>
+</ul>
+<p><em>SELECT 函数(列名) FROM 表格名</em></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;创建数据库&quot;&gt;&lt;a href=&quot;#创建数据库&quot; class=&quot;headerlink&quot; title=&quot; 创建数据库&quot;&gt;&lt;/a&gt; 创建数据库&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;语法：&lt;/strong&gt; &lt;em&gt;CREATE DATABASE 数据库名称&lt;/em&gt;&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="SQL数据库" scheme="http://yoursite.com/categories/SQL%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OSG初步</title>
+    <link href="http://yoursite.com/2018/05/18/OSG%E5%88%9D%E6%AD%A5/"/>
+    <id>http://yoursite.com/2018/05/18/OSG初步/</id>
+    <published>2018-05-18T14:59:24.000Z</published>
+    <updated>2018-05-18T15:03:38.116Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C++ 数据类型</title>
+    <link href="http://yoursite.com/2017/05/18/C-DataType/"/>
+    <id>http://yoursite.com/2017/05/18/C-DataType/</id>
+    <published>2017-05-18T15:00:30.000Z</published>
+    <updated>2017-05-18T17:06:07.341Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="C-数据类型"><a href="#C-数据类型" class="headerlink" title="C++数据类型"></a>C++数据类型</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">关键字</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">布尔型</td>
+<td style="text-align:center">bool</td>
+<td>存储值True 或false</td>
+</tr>
+<tr>
+<td style="text-align:center">字符型</td>
+<td style="text-align:center">char</td>
+<td>通常一个八位(一个字节),这是一个整数类型</td>
+</tr>
+<tr>
+<td style="text-align:center">整型</td>
+<td style="text-align:center">int</td>
+<td>整数类型</td>
+</tr>
+<tr>
+<td style="text-align:center">浮点型</td>
+<td style="text-align:center">float</td>
+<td>单精度浮点值</td>
+</tr>
+<tr>
+<td style="text-align:center">双浮点型</td>
+<td style="text-align:center">double</td>
+<td>双精度浮点值</td>
+</tr>
+<tr>
+<td style="text-align:center">无类型</td>
+<td style="text-align:center">void</td>
+<td>空类型(可强制转换成任意类型)</td>
+</tr>
+<tr>
+<td style="text-align:center">宽字符型</td>
+<td style="text-align:center">wchar_t</td>
+<td>宽字符类型（双字节）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>一个字符可以用一个或多个类型修饰符进行修饰,一般程序默认为有符号类型。</p>
+<ul>
+<li><strong>Signed</strong></li>
+<li><strong>unsigned</strong></li>
+<li><strong>short</strong></li>
+<li><strong>long</strong></li>
+</ul>
+<p>下表显示了各种变量类型在内存中存储值时需要占用的内存，以及该类型的变量所能存储的最大值和最小值。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">位</th>
+<th>范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">1字节</td>
+<td>-128到127 或0到125</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned char</td>
+<td style="text-align:center">1字节</td>
+<td>0到125</td>
+</tr>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4字节</td>
+<td>-2147483648 到 2147483647</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned int</td>
+<td style="text-align:center">4字节</td>
+<td>0 到 4294967295</td>
+</tr>
+<tr>
+<td style="text-align:center">short int</td>
+<td style="text-align:center">2字节</td>
+<td>-2<sup>16-1</sup> 到 2<sup>16-1</sup>-1</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned short int</td>
+<td style="text-align:center">2字节</td>
+<td>0 到 2<sup>16</sup>-1</td>
+</tr>
+<tr>
+<td style="text-align:center">long int</td>
+<td style="text-align:center">8字节</td>
+<td>-2<sup>64-1</sup> 到-2<sup>64-1</sup>-1</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned long int</td>
+<td style="text-align:center">8字节</td>
+<td>0 to 2<sup>64</sup>-1</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">4字节</td>
+<td>+/- 3.4e +/- 38 (~7 个数字)</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">8字节</td>
+<td>+/- 1.7e +/- 308 (~15 个数字)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>float和double的范围是由指数的位数来决定的。</p>
+<p>float的指数位有8位，而double的指数位有11位，分布如下：</p>
+<p><strong>float：</strong> </p>
+<ul>
+<li>1bit（符号位） 8bits（指数位） 23bits（尾数位）</li>
+</ul>
+<p><strong>double：</strong></p>
+<ul>
+<li>1bit（符号位） 11bits（指数位） 52bits（尾数位）</li>
+</ul>
+<ul>
+<li>于是，float的指数范围为-127~+128，而double的指数范围为-1023~+1024，并且指数位是按补码的形式来划分的。其中负指数决定了浮点数所能表达的绝对值最小的非零数；而正指数决定了浮点数所能表达的绝对值最大的数，也即决定了浮点数的取值范围。</li>
+</ul>
+<ul>
+<li>float的范围为-2^128 ~ +2^128，也即-3.40E+38 ~ +3.40E+38；double的范围为-2^1024 ~ +2^1024，也即-1.79E+308 ~ +1.79E+308。</li>
+</ul>
+<p><strong>精度</strong></p>
+<ul>
+<li>float和double的精度是由尾数的位数来决定的。浮点数在内存中是按科学计数法来存储的，其整数部分始终是一个隐含着的“1”，由于它是不变的，故不能对精度造成影响。</li>
+<li>float：2^23 = 8388608，一共七位，这意味着最多能有7位有效数字，但绝对能保证的为6位，也即float的精度为6~7位有效数字；</li>
+<li>double：2^52 = 4503599627370496，一共16位，同理，double的精度为15~16位。</li>
+</ul>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;C-数据类型&quot;&gt;&lt;a href=&quot;#C-数据类型&quot; class=&quot;headerlink&quot; title=&quot;C++数据类型&quot;&gt;&lt;/a&gt;C++数据类型&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;类型&lt;/
+    
+    </summary>
+    
+      <category term="C++基础" scheme="http://yoursite.com/categories/C-%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UG表格打断</title>
+    <link href="http://yoursite.com/2017/03/06/UG%E8%A1%A8%E6%A0%BC%E6%89%93%E6%96%AD/"/>
+    <id>http://yoursite.com/2017/03/06/UG表格打断/</id>
+    <published>2017-03-06T14:23:08.000Z</published>
+    <updated>2017-03-07T14:35:04.150Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="创建表格"><a href="#创建表格" class="headerlink" title=" 创建表格 "></a> 创建表格 </h2><pre><code>int CreateTabnot()
+{
+    tag_t tTabular = NULL_TAG;
+    int nRows = 0, nColumns = 0;                    //零时行列数量
+    tag_t tRows[200] = { NULL_TAG };                //行;
+    tag_t tColumns[20] = { NULL_TAG };                //列;
+    tag_t tCell[200 * 20] = { NULL_TAG };            //单元各
+
+    UF_TABNOT_section_prefs_t prefs;
+    double origin[3] = { 0.0, 0.0, 0.0 };            //表格标注位置;
+
+    UF_TABNOT_ask_default_section_prefs(&amp;prefs);    //获取默认设置;
+
+    prefs.overflow_spacing = 200;                    //偏移延拓部分（只用于在同一片上的表继续）的距离;
+    prefs.max_height = 200;                            //最大高度,超过该高度表格会打断;
+    prefs.header_location = UF_TABNOT_header_location_above;    //显示标题的位置;
+    prefs.max_height = 250.0;                                    //表格打断最大高度,其值为0时表示不打断;
+    prefs.overflow_direction = UF_TABNOT_overflow_left;        //表格溢出的方向;
+    prefs.overflow_spacing = 0.0;                                //溢出后的距离;
+    prefs.attach_point = UF_TABNOT_attach_point_top_left;        //创建表格输入点在表格上的位置;
+    prefs.use_double_width_border = false;                    //是否显示双边框;
+    prefs.border_width = 0.0;                                    //双边框的距离；
+
+    UF_TABNOT_create(&amp;prefs, origin, &amp;tTabular);
+
+    UF_TABNOT_ask_nm_rows(tTabular, &amp;nRows);        //得到表格标注行数
+    UF_TABNOT_ask_nm_columns(tTabular, &amp;nColumns);    //得到表格标注列数
+    //删除一行列(子留下一行一列)，注意删除必须有顺序的删除
+    for (int i = 0; i&lt;nRows - 1; i++)
+    {
+        UF_TABNOT_ask_nth_row(tTabular, tTabular - i - 1, &amp;tRows[nRows - i - 1]); //得到表格标注一行
+        UF_TABNOT_remove_row(tRows[nRows - i - 1]); //删除一行
+    }
+    for (int i = 0; i&lt;nColumns - 1; i++)
+    {
+        UF_TABNOT_ask_nth_column(tTabular, nColumns - i - 1, &amp;tColumns[nColumns - i - 1]); //得到表格标注一列
+        UF_TABNOT_remove_column(tColumns[nColumns - i - 1]);  //删除一列
+    }
+
+    return 0;
+}
+</code></pre><h2 id="创建行列"><a href="#创建行列" class="headerlink" title=" 创建行列"></a> 创建行列</h2><pre><code>int CreateRowCol(tag_t tTabular, int nRow, int nCol)
+{
+    UF_TABNOT_cell_prefs_t  cell_prefs;
+    tag_t tRows[200] = { NULL_TAG };                //行;
+    tag_t tColumns[20] = { NULL_TAG };                //列;
+    tag_t tCell[200 * 20] = { NULL_TAG };            //单元格
+    //初始化单元格属性;
+    UF_TABNOT_set_default_cell_prefs(&amp;cell_prefs);
+    cell_prefs.text_font = 1;                //字体;
+    cell_prefs.text_height = 3.0;            //文本高度;
+    cell_prefs.text_aspect_ratio = 0.7;        //文本纵横比;
+    cell_prefs.text_angle = 0;                //文本角度;
+    cell_prefs.text_slant = 0;                //文本倾斜角度;
+    cell_prefs.char_space_factor = 0.1;        //文本空间因数;
+    cell_prefs.text_color = 1;                //文本颜色;
+    cell_prefs.text_density = 1;            //文本密度1：正常，2：重，3：薄，0：使用默认;
+    cell_prefs.bottom_line_cfw[0] = 105;    //横底线颜色;
+    cell_prefs.bottom_line_cfw[1] = 1;        //横底线线型;
+    cell_prefs.bottom_line_cfw[2] = 1;        //横底线宽度;
+    cell_prefs.right_line_cfw[0] = 105;        //竖底线颜色;
+    cell_prefs.right_line_cfw[1] = 1;        //竖底线线型;
+    cell_prefs.right_line_cfw[2] = 1;        //竖底线宽度;
+
+    UF_TABNOT_ask_nth_row(tTabular, 0, &amp;tRows[0]);                //得到表格标注一行
+    UF_TABNOT_ask_nth_column(tTabular, 0, &amp;tColumns[0]);        //得到表格标注一列
+    UF_TABNOT_set_row_height(tRows[0], 10);                        //设置表格标注一行高度
+    UF_TABNOT_set_column_width(tColumns[0], 20);                //设置表格标注一列宽度
+    //添加行列
+    for (int i = 0; i&lt;20; i++)//添加行数量;
+    {
+        tag_t tAppRow = NULL_TAG;
+        UF_TABNOT_create_row(5.0, &amp;tAppRow);
+        UF_TABNOT_add_row(tTabular, tAppRow, UF_TABNOT_APPEND);   //添加一行的方法
+    }
+    for (int i = 0; i&lt;5; i++)//列的数量
+    {
+        tag_t tAppColumn = NULL_TAG;
+        UF_TABNOT_create_column(15, &amp;tAppColumn);
+        UF_TABNOT_add_column(tTabular, tAppColumn, UF_TABNOT_APPEND);//添加一列的方法
+    }
+    return 0;
+}
+</code></pre><h2 id="单元格操作"><a href="#单元格操作" class="headerlink" title="单元格操作"></a>单元格操作</h2><pre><code>int CellOperation(tag_t tTabular, tag_t tRows[200], tag_t tColumns[20])
+{
+    tag_t tCell[200 * 20] = { NULL_TAG };            //单元格
+    UF_TABNOT_cell_prefs_t  cell_prefs;
+    //合并单元格，创建表格标题
+    UF_TABNOT_ask_nth_row(tTabular, 0, &amp;tRows[0]);       //得到表格标注一行;
+    UF_TABNOT_ask_nth_column(tTabular, 0, &amp;tColumns[0]); //得到表格标注第1列        
+    UF_TABNOT_ask_cell_at_row_col(tRows[0], tColumns[0], &amp;tCell[0]); //输入行列柱获得单元格;
+    UF_TABNOT_ask_cell_at_row_col(tRows[0], tColumns[1], &amp;tCell[1]); //输入行列柱获得单元格;
+    UF_TABNOT_merge_cells(tCell[0], tCell[1]); //输入合并单元表格(start_cell，end_cell);
+
+    char SzCellText[32] = &quot;测试&quot;;
+    UF_TABNOT_ask_nth_column(tTabular, 0, &amp;tColumns[0]);                //得到表格标注第1列  
+    UF_TABNOT_ask_cell_at_row_col(tRows[0], tColumns[0], &amp;tCell[0]);    //输入行列柱获得细胞（表格位置）
+    UF_TABNOT_set_cell_text(tCell[0], SzCellText);                        //设置单元格内容;
+    //UF_TABNOT_cell_prefs_s cell_prefs;                                    //单元格属性设置;
+    UF_TABNOT_ask_cell_prefs(tCell[0], &amp;cell_prefs);                    //获取单元格默认设置;
+    cell_prefs.text_color = 1;                                            //文本颜色;
+    cell_prefs.text_height = 3.0;                                        //高度
+    cell_prefs.text_density = 2;                                        //文本密度1:正常,2:重,3:薄,0:使用默认
+    cell_prefs.format = UF_TABNOT_format_text;                            //单元格格式 UF_TABNOT_format_text =内容是文本
+    cell_prefs.horiz_just = UF_TABNOT_just_center;                        //文字位置中心
+    UF_TABNOT_set_cell_prefs(tCell[0], &amp;cell_prefs);
+
+    return 0;
+}
+</code></pre><hr>
+<h2 id="打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）"><a href="#打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）" class="headerlink" title=" 打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）"></a> 打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）</h2><p>获取表格陪打断成几列表格  </p>
+<pre><code>int SectionTabnot(tag_t tTabnote)
+{
+    int nCount=0;                //表格被打断成了几段;
+    tag_t tSection=NULL_TAG;    //打断的表格TAG;
+    UF_TABNOT_section_prefs_t section_prefs;//打断后表格的属性; 
+    irc=UF_TABNOT_ask_nm_sections(tTabular,&amp;nCount);
+    if(!irc)
+    for(int i=0;i&lt;nCount;i++)//第i个打断后的表格;
+    {
+        int nTemp=i;//UG内置函数的一个错误会导致i变为0,所以将其赋值给另一个变量，让其不受错误的变化；
+        irc=UF_TABNOT_ask_nth_section(tTabnote,i,&amp;tSection);//获取打断后的第nTemp个表格，这里函数执行后会把i变成0;
+        //获取属性;
+        if(!irc)
+        {
+            irc=UF_TABNOT_ask_section_prefs(tSection,&amp;section_prefs);//获取打断后表格的属性;
+            //设置打断最大长度;
+            section_prefs.max_height=180.0;//这里在每次循环可设置不同的值;
+        }
+        //设置打断表格的属性;
+        if(!irc)
+        irc=UF_TABNOT_set_section_prefs(tSection,&amp;section_prefs);
+        //询问表格打断成了多少段;
+        if(!irc)
+        irc=UF_TABNOT_ask_nm_sections(tTabular,&amp;nCount);
+        i=nTemp;
+    }
+    report(irc);
+}
+</code></pre><p>打印错误  </p>
+<pre><code>void report(irc)
+{
+    if (irc)
+     {
+             char szMessg[133]=&quot;&quot;;
+        UF_get_fail_message(irc, szMessg);
+        uc1601(szMessg,1);
+      }
+}
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;创建表格&quot;&gt;&lt;a href=&quot;#创建表格&quot; class=&quot;headerlink&quot; title=&quot; 创建表格 &quot;&gt;&lt;/a&gt; 创建表格 &lt;/h2&gt;&lt;pre&gt;&lt;code&gt;int CreateTabnot()
+{
+    tag_t tTabular = NULL_TAG
+    
+    </summary>
+    
+      <category term="UG二次开发" scheme="http://yoursite.com/categories/UG%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="UG" scheme="http://yoursite.com/tags/UG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Welcome</title>
+    <link href="http://yoursite.com/2017/03/04/hello-world/"/>
+    <id>http://yoursite.com/2017/03/04/hello-world/</id>
+    <published>2017-03-04T01:53:30.187Z</published>
+    <updated>2017-03-02T16:57:25.833Z</updated>
+    
+    <content type="html"><![CDATA[<p>你好，欢迎来到我的个人技术博客。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你好，欢迎来到我的个人技术博客。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

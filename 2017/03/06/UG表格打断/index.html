@@ -1,0 +1,1196 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="UG," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="QIAN BLOG" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="创建表格 int CreateTabnot()
+{
+    tag_t tTabular = NULL_TAG;
+    int nRows = 0, nColumns = 0;                    //零时行列数量
+    tag_t tRows[200] = { NULL_TAG };                //行;
+    tag_t tColumns[20] =">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UG表格打断">
+<meta property="og:url" content="http://yoursite.com/2017/03/06/UG表格打断/index.html">
+<meta property="og:site_name" content="QIAN BLOG">
+<meta property="og:description" content="创建表格 int CreateTabnot()
+{
+    tag_t tTabular = NULL_TAG;
+    int nRows = 0, nColumns = 0;                    //零时行列数量
+    tag_t tRows[200] = { NULL_TAG };                //行;
+    tag_t tColumns[20] =">
+<meta property="og:updated_time" content="2017-03-07T14:35:04.150Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UG表格打断">
+<meta name="twitter:description" content="创建表格 int CreateTabnot()
+{
+    tag_t tTabular = NULL_TAG;
+    int nRows = 0, nColumns = 0;                    //零时行列数量
+    tag_t tRows[200] = { NULL_TAG };                //行;
+    tag_t tColumns[20] =">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/03/06/UG表格打断/"/>
+
+
+
+
+
+  <title> UG表格打断 | QIAN BLOG </title>
+</head>
+
+
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+	
+	
+	<a href="https://myoutcr.github.io/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+	
+	
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">QIAN BLOG</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">个人技术博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-edit"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/06/UG表格打断/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="YHM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="QIAN BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                UG表格打断
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-06T22:23:08+08:00">
+                2017-03-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/UG二次开发/" itemprop="url" rel="index">
+                    <span itemprop="name">UG二次开发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/06/UG表格打断/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/06/UG表格打断/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                  
+                    <span class="post-meta-item-text">字数统计</span>
+                  
+                    <span title="字数统计" }}">
+                      1,114
+                    </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                  
+                    <span class="post-meta-item-text">阅读时长</span>
+                  
+                    <span title="阅读时长" }}">
+                      5
+                    </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="创建表格"><a href="#创建表格" class="headerlink" title=" 创建表格 "></a> 创建表格 </h2><pre><code>int CreateTabnot()
+{
+    tag_t tTabular = NULL_TAG;
+    int nRows = 0, nColumns = 0;                    //零时行列数量
+    tag_t tRows[200] = { NULL_TAG };                //行;
+    tag_t tColumns[20] = { NULL_TAG };                //列;
+    tag_t tCell[200 * 20] = { NULL_TAG };            //单元各
+
+    UF_TABNOT_section_prefs_t prefs;
+    double origin[3] = { 0.0, 0.0, 0.0 };            //表格标注位置;
+
+    UF_TABNOT_ask_default_section_prefs(&amp;prefs);    //获取默认设置;
+
+    prefs.overflow_spacing = 200;                    //偏移延拓部分（只用于在同一片上的表继续）的距离;
+    prefs.max_height = 200;                            //最大高度,超过该高度表格会打断;
+    prefs.header_location = UF_TABNOT_header_location_above;    //显示标题的位置;
+    prefs.max_height = 250.0;                                    //表格打断最大高度,其值为0时表示不打断;
+    prefs.overflow_direction = UF_TABNOT_overflow_left;        //表格溢出的方向;
+    prefs.overflow_spacing = 0.0;                                //溢出后的距离;
+    prefs.attach_point = UF_TABNOT_attach_point_top_left;        //创建表格输入点在表格上的位置;
+    prefs.use_double_width_border = false;                    //是否显示双边框;
+    prefs.border_width = 0.0;                                    //双边框的距离；
+
+    UF_TABNOT_create(&amp;prefs, origin, &amp;tTabular);
+
+    UF_TABNOT_ask_nm_rows(tTabular, &amp;nRows);        //得到表格标注行数
+    UF_TABNOT_ask_nm_columns(tTabular, &amp;nColumns);    //得到表格标注列数
+    //删除一行列(子留下一行一列)，注意删除必须有顺序的删除
+    for (int i = 0; i&lt;nRows - 1; i++)
+    {
+        UF_TABNOT_ask_nth_row(tTabular, tTabular - i - 1, &amp;tRows[nRows - i - 1]); //得到表格标注一行
+        UF_TABNOT_remove_row(tRows[nRows - i - 1]); //删除一行
+    }
+    for (int i = 0; i&lt;nColumns - 1; i++)
+    {
+        UF_TABNOT_ask_nth_column(tTabular, nColumns - i - 1, &amp;tColumns[nColumns - i - 1]); //得到表格标注一列
+        UF_TABNOT_remove_column(tColumns[nColumns - i - 1]);  //删除一列
+    }
+
+    return 0;
+}
+</code></pre><h2 id="创建行列"><a href="#创建行列" class="headerlink" title=" 创建行列"></a> 创建行列</h2><pre><code>int CreateRowCol(tag_t tTabular, int nRow, int nCol)
+{
+    UF_TABNOT_cell_prefs_t  cell_prefs;
+    tag_t tRows[200] = { NULL_TAG };                //行;
+    tag_t tColumns[20] = { NULL_TAG };                //列;
+    tag_t tCell[200 * 20] = { NULL_TAG };            //单元格
+    //初始化单元格属性;
+    UF_TABNOT_set_default_cell_prefs(&amp;cell_prefs);
+    cell_prefs.text_font = 1;                //字体;
+    cell_prefs.text_height = 3.0;            //文本高度;
+    cell_prefs.text_aspect_ratio = 0.7;        //文本纵横比;
+    cell_prefs.text_angle = 0;                //文本角度;
+    cell_prefs.text_slant = 0;                //文本倾斜角度;
+    cell_prefs.char_space_factor = 0.1;        //文本空间因数;
+    cell_prefs.text_color = 1;                //文本颜色;
+    cell_prefs.text_density = 1;            //文本密度1：正常，2：重，3：薄，0：使用默认;
+    cell_prefs.bottom_line_cfw[0] = 105;    //横底线颜色;
+    cell_prefs.bottom_line_cfw[1] = 1;        //横底线线型;
+    cell_prefs.bottom_line_cfw[2] = 1;        //横底线宽度;
+    cell_prefs.right_line_cfw[0] = 105;        //竖底线颜色;
+    cell_prefs.right_line_cfw[1] = 1;        //竖底线线型;
+    cell_prefs.right_line_cfw[2] = 1;        //竖底线宽度;
+
+    UF_TABNOT_ask_nth_row(tTabular, 0, &amp;tRows[0]);                //得到表格标注一行
+    UF_TABNOT_ask_nth_column(tTabular, 0, &amp;tColumns[0]);        //得到表格标注一列
+    UF_TABNOT_set_row_height(tRows[0], 10);                        //设置表格标注一行高度
+    UF_TABNOT_set_column_width(tColumns[0], 20);                //设置表格标注一列宽度
+    //添加行列
+    for (int i = 0; i&lt;20; i++)//添加行数量;
+    {
+        tag_t tAppRow = NULL_TAG;
+        UF_TABNOT_create_row(5.0, &amp;tAppRow);
+        UF_TABNOT_add_row(tTabular, tAppRow, UF_TABNOT_APPEND);   //添加一行的方法
+    }
+    for (int i = 0; i&lt;5; i++)//列的数量
+    {
+        tag_t tAppColumn = NULL_TAG;
+        UF_TABNOT_create_column(15, &amp;tAppColumn);
+        UF_TABNOT_add_column(tTabular, tAppColumn, UF_TABNOT_APPEND);//添加一列的方法
+    }
+    return 0;
+}
+</code></pre><h2 id="单元格操作"><a href="#单元格操作" class="headerlink" title="单元格操作"></a>单元格操作</h2><pre><code>int CellOperation(tag_t tTabular, tag_t tRows[200], tag_t tColumns[20])
+{
+    tag_t tCell[200 * 20] = { NULL_TAG };            //单元格
+    UF_TABNOT_cell_prefs_t  cell_prefs;
+    //合并单元格，创建表格标题
+    UF_TABNOT_ask_nth_row(tTabular, 0, &amp;tRows[0]);       //得到表格标注一行;
+    UF_TABNOT_ask_nth_column(tTabular, 0, &amp;tColumns[0]); //得到表格标注第1列        
+    UF_TABNOT_ask_cell_at_row_col(tRows[0], tColumns[0], &amp;tCell[0]); //输入行列柱获得单元格;
+    UF_TABNOT_ask_cell_at_row_col(tRows[0], tColumns[1], &amp;tCell[1]); //输入行列柱获得单元格;
+    UF_TABNOT_merge_cells(tCell[0], tCell[1]); //输入合并单元表格(start_cell，end_cell);
+
+    char SzCellText[32] = &quot;测试&quot;;
+    UF_TABNOT_ask_nth_column(tTabular, 0, &amp;tColumns[0]);                //得到表格标注第1列  
+    UF_TABNOT_ask_cell_at_row_col(tRows[0], tColumns[0], &amp;tCell[0]);    //输入行列柱获得细胞（表格位置）
+    UF_TABNOT_set_cell_text(tCell[0], SzCellText);                        //设置单元格内容;
+    //UF_TABNOT_cell_prefs_s cell_prefs;                                    //单元格属性设置;
+    UF_TABNOT_ask_cell_prefs(tCell[0], &amp;cell_prefs);                    //获取单元格默认设置;
+    cell_prefs.text_color = 1;                                            //文本颜色;
+    cell_prefs.text_height = 3.0;                                        //高度
+    cell_prefs.text_density = 2;                                        //文本密度1:正常,2:重,3:薄,0:使用默认
+    cell_prefs.format = UF_TABNOT_format_text;                            //单元格格式 UF_TABNOT_format_text =内容是文本
+    cell_prefs.horiz_just = UF_TABNOT_just_center;                        //文字位置中心
+    UF_TABNOT_set_cell_prefs(tCell[0], &amp;cell_prefs);
+
+    return 0;
+}
+</code></pre><hr>
+<h2 id="打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）"><a href="#打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）" class="headerlink" title=" 打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）"></a> 打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）</h2><p>获取表格陪打断成几列表格  </p>
+<pre><code>int SectionTabnot(tag_t tTabnote)
+{
+    int nCount=0;                //表格被打断成了几段;
+    tag_t tSection=NULL_TAG;    //打断的表格TAG;
+    UF_TABNOT_section_prefs_t section_prefs;//打断后表格的属性; 
+    irc=UF_TABNOT_ask_nm_sections(tTabular,&amp;nCount);
+    if(!irc)
+    for(int i=0;i&lt;nCount;i++)//第i个打断后的表格;
+    {
+        int nTemp=i;//UG内置函数的一个错误会导致i变为0,所以将其赋值给另一个变量，让其不受错误的变化；
+        irc=UF_TABNOT_ask_nth_section(tTabnote,i,&amp;tSection);//获取打断后的第nTemp个表格，这里函数执行后会把i变成0;
+        //获取属性;
+        if(!irc)
+        {
+            irc=UF_TABNOT_ask_section_prefs(tSection,&amp;section_prefs);//获取打断后表格的属性;
+            //设置打断最大长度;
+            section_prefs.max_height=180.0;//这里在每次循环可设置不同的值;
+        }
+        //设置打断表格的属性;
+        if(!irc)
+        irc=UF_TABNOT_set_section_prefs(tSection,&amp;section_prefs);
+        //询问表格打断成了多少段;
+        if(!irc)
+        irc=UF_TABNOT_ask_nm_sections(tTabular,&amp;nCount);
+        i=nTemp;
+    }
+    report(irc);
+}
+</code></pre><p>打印错误  </p>
+<pre><code>void report(irc)
+{
+    if (irc)
+     {
+             char szMessg[133]=&quot;&quot;;
+        UF_get_fail_message(irc, szMessg);
+        uc1601(szMessg,1);
+      }
+}
+</code></pre>
+      
+    </div>
+
+	<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+	<div>
+	
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/UG/" rel="tag"># UG</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/04/hello-world/" rel="next" title="Welcome">
+                <i class="fa fa-chevron-left"></i> Welcome
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/18/C-DataType/" rel="prev" title="C++ 数据类型">
+                C++ 数据类型 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=2126634" async = "async" ></script>
+</div>
+
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/06/UG表格打断/"
+           data-title="UG表格打断" data-url="http://yoursite.com/2017/03/06/UG表格打断/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="YHM" />
+          <p class="site-author-name" itemprop="name">YHM</p>
+           
+              <p class="site-description motion-element" itemprop="description">读万卷书，行万里路。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/CnYangming" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/3317560991" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建表格"><span class="nav-number">1.</span> <span class="nav-text"> 创建表格 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建行列"><span class="nav-number">2.</span> <span class="nav-text"> 创建行列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单元格操作"><span class="nav-number">3.</span> <span class="nav-text">单元格操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）"><span class="nav-number">4.</span> <span class="nav-text"> 打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<div class="powered-by">
+    个人专属
+</div>
+
+<div class="theme-info">
+  博客 ~浅
+ 
+</div>
+
+
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"> Powered By - YHM</span>
+  <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+</div>
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"myoutcr"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+</body>
+</html>
+

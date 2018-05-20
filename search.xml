@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[Python学习路线]]></title>
+      <url>%2F2018%2F05%2F19%2FPython%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%2F</url>
+      <content type="text"><![CDATA[python基础知识Python手册 python基础教程 正则表达式 正则表达式 XPath表达式 掌握urllib模块 Urllib手册 掌握抓包技术Fiddler 简书Fiddler教程 Fiddler手册 掌握Scrapy框架 Scrapy手册 掌握常见的反爬策略与反爬处理策略 反爬虫策略 掌握PhantomJS、Selenium等工具的使用 PhantomJS,Selenium教程 PhantomJS手册 Selenium手册 掌握分布式爬虫技术与数据去重技术 简单分布式爬虫 数据去重]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[SQL Server基础]]></title>
+      <url>%2F2018%2F05%2F19%2FSQL%20Server%E5%9F%BA%E7%A1%80%2F</url>
+      <content type="text"><![CDATA[创建数据库语法： CREATE DATABASE 数据库名称 实例：CREATE DATABASE TDB_SQL 切换到相应数据库下语法： USE 数据库名称 USE TDB_SQL 创建数据表语法: CREATE TABLE 表格名(列明 属性信息，…) CREATE TABLE customer(Frist_Name char(50),Last_Name char(50),Address char(100),City char(50),Country char(50),Brith_Date date) 数据库添加列语法: ALTER TABLE 表格名 ADD 添加的列名 列名属性信息 ALTER TABLE Coustomer Add AddCol char(50) NOT NULL 删除列语法: ALTER TABLE 表格名 DROP COLUMN 要删除的列名 ALTER TABLE Coustomer DROP COLUMN ReCol 删除表DROP TABLE 用户信息表 清除表格中的所有数据语法：TRUNCATE TABLE 表格名称 TRUNCATE TABLE customer_one 更改列名称语法: sp_rename ‘表格名.列名’,更改后的列名,’COLUMN’ sp_rename &apos;Coustomer.AddCol&apos;,ReCol ,&apos;COLUMN&apos; 插入语句语法：（单行插入） INSERT INTO 表格名(列名1,列名2，…) VALUES (列名1对应值,列名2对应值,…)语法：（多行行插入） INSERT INTO 表格名(列名1,列名2，…) VALUES (列名1对应值,列名2对应值,…),(列名1对应值,列名2对应值,…)… INSERT INTO customer(Frist_Name,Last_Name,Address,City,Country,Brith_Date) VALUES(&apos;f1&apos;,&apos;L1&apos;,&apos;A1&apos;,&apos;C1&apos;,&apos;COU1&apos;,NULL),(&apos;f2&apos;,&apos;L2&apos;,&apos;A2&apos;,&apos;C2&apos;,&apos;COU2&apos;,NULL) 查询数据语法 SELECT 列名 FROM 表格名 SELECT UserName FROM Coustomer SELECT UserName,City FROM Coustomer 去掉查找到重复的数据 SELECT DISTINCT Country FROM Coustomer 更改内容UPDATE TestTABLE SET name=&apos;6&apos; 关键字 WHERE 关键字:条件过滤 语法:SELECT “列名” FROM “表格名” WHERE “条件” SELECT UserName,City,Country FROM Coustomer WHERE Country=&apos;中国&apos; AND City=&apos;武汉&apos; IN 关键字1.与WHERE有多个相等的值时 SELECT UserName,City,Country FROM Coustomer WHERE Country IN (&apos;中国&apos;,&apos;jp&apos;) LIKE关键字 语法：SELECT 列名 FROM 表格名 WHERE 列名 LIKE{模式} SELECT UserName,City,Country FROM Coustomer WHERE Country LIKE&apos;%国&apos; OR Country LIKE&apos;%P&apos; ORDER BY 关键字ASC 从小到大，DESC 从大到小，默认是ASC 语法：SELECT 列名FROM 表格名WHERE 条件 ORDER BY 列名 [ASC,DESC] SELECT UserName,City,Country FROM Coustomer ORDER BY UserName DESC 函数 SELECT 函数(列名) FROM 表格名]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[OSG初步]]></title>
+      <url>%2F2018%2F05%2F18%2FOSG%E5%88%9D%E6%AD%A5%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[C++ 数据类型]]></title>
+      <url>%2F2017%2F05%2F18%2FC-DataType%2F</url>
+      <content type="text"><![CDATA[C++数据类型 类型 关键字 描述 布尔型 bool 存储值True 或false 字符型 char 通常一个八位(一个字节),这是一个整数类型 整型 int 整数类型 浮点型 float 单精度浮点值 双浮点型 double 双精度浮点值 无类型 void 空类型(可强制转换成任意类型) 宽字符型 wchar_t 宽字符类型（双字节） 一个字符可以用一个或多个类型修饰符进行修饰,一般程序默认为有符号类型。 Signed unsigned short long 下表显示了各种变量类型在内存中存储值时需要占用的内存，以及该类型的变量所能存储的最大值和最小值。 类型 位 范围 char 1字节 -128到127 或0到125 unsigned char 1字节 0到125 int 4字节 -2147483648 到 2147483647 unsigned int 4字节 0 到 4294967295 short int 2字节 -216-1 到 216-1-1 unsigned short int 2字节 0 到 216-1 long int 8字节 -264-1 到-264-1-1 unsigned long int 8字节 0 to 264-1 float 4字节 +/- 3.4e +/- 38 (~7 个数字) double 8字节 +/- 1.7e +/- 308 (~15 个数字) float和double的范围是由指数的位数来决定的。 float的指数位有8位，而double的指数位有11位，分布如下： float： 1bit（符号位） 8bits（指数位） 23bits（尾数位） double： 1bit（符号位） 11bits（指数位） 52bits（尾数位） 于是，float的指数范围为-127~+128，而double的指数范围为-1023~+1024，并且指数位是按补码的形式来划分的。其中负指数决定了浮点数所能表达的绝对值最小的非零数；而正指数决定了浮点数所能表达的绝对值最大的数，也即决定了浮点数的取值范围。 float的范围为-2^128 ~ +2^128，也即-3.40E+38 ~ +3.40E+38；double的范围为-2^1024 ~ +2^1024，也即-1.79E+308 ~ +1.79E+308。 精度 float和double的精度是由尾数的位数来决定的。浮点数在内存中是按科学计数法来存储的，其整数部分始终是一个隐含着的“1”，由于它是不变的，故不能对精度造成影响。 float：2^23 = 8388608，一共七位，这意味着最多能有7位有效数字，但绝对能保证的为6位，也即float的精度为6~7位有效数字； double：2^52 = 4503599627370496，一共16位，同理，double的精度为15~16位。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[UG表格打断]]></title>
+      <url>%2F2017%2F03%2F06%2FUG%E8%A1%A8%E6%A0%BC%E6%89%93%E6%96%AD%2F</url>
+      <content type="text"><![CDATA[创建表格 int CreateTabnot() { tag_t tTabular = NULL_TAG; int nRows = 0, nColumns = 0; //零时行列数量 tag_t tRows[200] = { NULL_TAG }; //行; tag_t tColumns[20] = { NULL_TAG }; //列; tag_t tCell[200 * 20] = { NULL_TAG }; //单元各 UF_TABNOT_section_prefs_t prefs; double origin[3] = { 0.0, 0.0, 0.0 }; //表格标注位置; UF_TABNOT_ask_default_section_prefs(&amp;prefs); //获取默认设置; prefs.overflow_spacing = 200; //偏移延拓部分（只用于在同一片上的表继续）的距离; prefs.max_height = 200; //最大高度,超过该高度表格会打断; prefs.header_location = UF_TABNOT_header_location_above; //显示标题的位置; prefs.max_height = 250.0; //表格打断最大高度,其值为0时表示不打断; prefs.overflow_direction = UF_TABNOT_overflow_left; //表格溢出的方向; prefs.overflow_spacing = 0.0; //溢出后的距离; prefs.attach_point = UF_TABNOT_attach_point_top_left; //创建表格输入点在表格上的位置; prefs.use_double_width_border = false; //是否显示双边框; prefs.border_width = 0.0; //双边框的距离； UF_TABNOT_create(&amp;prefs, origin, &amp;tTabular); UF_TABNOT_ask_nm_rows(tTabular, &amp;nRows); //得到表格标注行数 UF_TABNOT_ask_nm_columns(tTabular, &amp;nColumns); //得到表格标注列数 //删除一行列(子留下一行一列)，注意删除必须有顺序的删除 for (int i = 0; i&lt;nRows - 1; i++) { UF_TABNOT_ask_nth_row(tTabular, tTabular - i - 1, &amp;tRows[nRows - i - 1]); //得到表格标注一行 UF_TABNOT_remove_row(tRows[nRows - i - 1]); //删除一行 } for (int i = 0; i&lt;nColumns - 1; i++) { UF_TABNOT_ask_nth_column(tTabular, nColumns - i - 1, &amp;tColumns[nColumns - i - 1]); //得到表格标注一列 UF_TABNOT_remove_column(tColumns[nColumns - i - 1]); //删除一列 } return 0; } 创建行列int CreateRowCol(tag_t tTabular, int nRow, int nCol) { UF_TABNOT_cell_prefs_t cell_prefs; tag_t tRows[200] = { NULL_TAG }; //行; tag_t tColumns[20] = { NULL_TAG }; //列; tag_t tCell[200 * 20] = { NULL_TAG }; //单元格 //初始化单元格属性; UF_TABNOT_set_default_cell_prefs(&amp;cell_prefs); cell_prefs.text_font = 1; //字体; cell_prefs.text_height = 3.0; //文本高度; cell_prefs.text_aspect_ratio = 0.7; //文本纵横比; cell_prefs.text_angle = 0; //文本角度; cell_prefs.text_slant = 0; //文本倾斜角度; cell_prefs.char_space_factor = 0.1; //文本空间因数; cell_prefs.text_color = 1; //文本颜色; cell_prefs.text_density = 1; //文本密度1：正常，2：重，3：薄，0：使用默认; cell_prefs.bottom_line_cfw[0] = 105; //横底线颜色; cell_prefs.bottom_line_cfw[1] = 1; //横底线线型; cell_prefs.bottom_line_cfw[2] = 1; //横底线宽度; cell_prefs.right_line_cfw[0] = 105; //竖底线颜色; cell_prefs.right_line_cfw[1] = 1; //竖底线线型; cell_prefs.right_line_cfw[2] = 1; //竖底线宽度; UF_TABNOT_ask_nth_row(tTabular, 0, &amp;tRows[0]); //得到表格标注一行 UF_TABNOT_ask_nth_column(tTabular, 0, &amp;tColumns[0]); //得到表格标注一列 UF_TABNOT_set_row_height(tRows[0], 10); //设置表格标注一行高度 UF_TABNOT_set_column_width(tColumns[0], 20); //设置表格标注一列宽度 //添加行列 for (int i = 0; i&lt;20; i++)//添加行数量; { tag_t tAppRow = NULL_TAG; UF_TABNOT_create_row(5.0, &amp;tAppRow); UF_TABNOT_add_row(tTabular, tAppRow, UF_TABNOT_APPEND); //添加一行的方法 } for (int i = 0; i&lt;5; i++)//列的数量 { tag_t tAppColumn = NULL_TAG; UF_TABNOT_create_column(15, &amp;tAppColumn); UF_TABNOT_add_column(tTabular, tAppColumn, UF_TABNOT_APPEND);//添加一列的方法 } return 0; } 单元格操作int CellOperation(tag_t tTabular, tag_t tRows[200], tag_t tColumns[20]) { tag_t tCell[200 * 20] = { NULL_TAG }; //单元格 UF_TABNOT_cell_prefs_t cell_prefs; //合并单元格，创建表格标题 UF_TABNOT_ask_nth_row(tTabular, 0, &amp;tRows[0]); //得到表格标注一行; UF_TABNOT_ask_nth_column(tTabular, 0, &amp;tColumns[0]); //得到表格标注第1列 UF_TABNOT_ask_cell_at_row_col(tRows[0], tColumns[0], &amp;tCell[0]); //输入行列柱获得单元格; UF_TABNOT_ask_cell_at_row_col(tRows[0], tColumns[1], &amp;tCell[1]); //输入行列柱获得单元格; UF_TABNOT_merge_cells(tCell[0], tCell[1]); //输入合并单元表格(start_cell，end_cell); char SzCellText[32] = &quot;测试&quot;; UF_TABNOT_ask_nth_column(tTabular, 0, &amp;tColumns[0]); //得到表格标注第1列 UF_TABNOT_ask_cell_at_row_col(tRows[0], tColumns[0], &amp;tCell[0]); //输入行列柱获得细胞（表格位置） UF_TABNOT_set_cell_text(tCell[0], SzCellText); //设置单元格内容; //UF_TABNOT_cell_prefs_s cell_prefs; //单元格属性设置; UF_TABNOT_ask_cell_prefs(tCell[0], &amp;cell_prefs); //获取单元格默认设置; cell_prefs.text_color = 1; //文本颜色; cell_prefs.text_height = 3.0; //高度 cell_prefs.text_density = 2; //文本密度1:正常,2:重,3:薄,0:使用默认 cell_prefs.format = UF_TABNOT_format_text; //单元格格式 UF_TABNOT_format_text =内容是文本 cell_prefs.horiz_just = UF_TABNOT_just_center; //文字位置中心 UF_TABNOT_set_cell_prefs(tCell[0], &amp;cell_prefs); return 0; } 打断表格（需要将表格打断长度不一样时，若无此需要，只需执行上面代码即可）获取表格陪打断成几列表格 int SectionTabnot(tag_t tTabnote) { int nCount=0; //表格被打断成了几段; tag_t tSection=NULL_TAG; //打断的表格TAG; UF_TABNOT_section_prefs_t section_prefs;//打断后表格的属性; irc=UF_TABNOT_ask_nm_sections(tTabular,&amp;nCount); if(!irc) for(int i=0;i&lt;nCount;i++)//第i个打断后的表格; { int nTemp=i;//UG内置函数的一个错误会导致i变为0,所以将其赋值给另一个变量，让其不受错误的变化； irc=UF_TABNOT_ask_nth_section(tTabnote,i,&amp;tSection);//获取打断后的第nTemp个表格，这里函数执行后会把i变成0; //获取属性; if(!irc) { irc=UF_TABNOT_ask_section_prefs(tSection,&amp;section_prefs);//获取打断后表格的属性; //设置打断最大长度; section_prefs.max_height=180.0;//这里在每次循环可设置不同的值; } //设置打断表格的属性; if(!irc) irc=UF_TABNOT_set_section_prefs(tSection,&amp;section_prefs); //询问表格打断成了多少段; if(!irc) irc=UF_TABNOT_ask_nm_sections(tTabular,&amp;nCount); i=nTemp; } report(irc); } 打印错误 void report(irc) { if (irc) { char szMessg[133]=&quot;&quot;; UF_get_fail_message(irc, szMessg); uc1601(szMessg,1); } }]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Welcome]]></title>
+      <url>%2F2017%2F03%2F04%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[你好，欢迎来到我的个人技术博客。]]></content>
+    </entry>
+
+    
+  
+  
+</search>
