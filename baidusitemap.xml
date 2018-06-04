@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/05/18/OSG%E5%88%9D%E6%AD%A5/</loc>
+    <lastmod>2018-06-04T13:36:02.830Z</lastmod>
+    <data>
+        <display>
+        <title></title>
+        <pubTime>2018-05-18T14:59:24.902Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/05/19/Python%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</loc>
     <lastmod>2018-05-20T02:19:37.081Z</lastmod>
     <data>
@@ -38,21 +53,6 @@
              
               <breadCrumb title="SQL数据库" url="http://yoursite.com/categories/SQL%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2018/05/18/OSG%E5%88%9D%E6%AD%A5/</loc>
-    <lastmod>2018-05-18T15:03:38.116Z</lastmod>
-    <data>
-        <display>
-        <title>OSG初步</title>
-        <pubTime>2018-05-18T14:59:24.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
