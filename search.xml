@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[OSG场景的组织结构]]></title>
+      <url>%2F2018%2F06%2F04%2FOSG%E5%9C%BA%E6%99%AF%E7%9A%84%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84%2F</url>
+      <content type="text"><![CDATA[OSG采用包围层次BVH,其中采用树结构保存数据。OSG采用Node类来表达一个基本节点，也就是作为所有节点的基类，它需要一个BoundingSpherre类来表达自己的包围球形体。并且需要一些方法来更新包围球的大小。当节点发生变化时（删除、增加，改变自身包围球形状），需要重新计算该节点的包围球数据，并递归到根节点，以便维护场景BVH树的可用性。 osg::Node类Node()//默认构造函数 void dirtyBound()\\提示更新节点的包围体 const BoudingSpere&amp; getBound() const \\获取节点包围体 BoudingSpere computerBound() const \\虚函数，计算节点包围体 const ParentList getParents() const\\获取节点的父节点列表 const Group* getParent(unsigned int i)const \\获取指定的父节点 unsigned int getNumParents() const \\获取父节点数目 void AddParent(Group *node) \\为当前节点追加一个父节点 强制重新计算并获取包围求数据 node-&gt;dirtyBound(); osg::getBoundingSphere&amp; bs=node-&gt;getBOund(); 父节点与子节点关系一个场景树包含一个根节点、多级内部枝节节点，以及都哟个末端的叶子接待你。OSG场景为一种有向无环图(DAG)。 在DAG层次中，多个父节点共享一个子节点的情况十分普遍，我们称为对这个子节点的“实例化”（Instance）。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Python学习路线]]></title>
       <url>%2F2018%2F05%2F19%2FPython%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%2F</url>
       <content type="text"><![CDATA[python基础知识Python手册 python基础教程 正则表达式 正则表达式 XPath表达式 掌握urllib模块 Urllib手册 掌握抓包技术Fiddler 简书Fiddler教程 Fiddler手册 掌握Scrapy框架 Scrapy手册 掌握常见的反爬策略与反爬处理策略 反爬虫策略 掌握PhantomJS、Selenium等工具的使用 PhantomJS,Selenium教程 PhantomJS手册 Selenium手册 掌握分布式爬虫技术与数据去重技术 简单分布式爬虫 数据去重]]></content>
@@ -13,13 +20,6 @@
       <title><![CDATA[SQL Server基础]]></title>
       <url>%2F2018%2F05%2F19%2FSQL%20Server%E5%9F%BA%E7%A1%80%2F</url>
       <content type="text"><![CDATA[创建数据库语法： CREATE DATABASE 数据库名称 实例：CREATE DATABASE TDB_SQL 切换到相应数据库下语法： USE 数据库名称 USE TDB_SQL 创建数据表语法: CREATE TABLE 表格名(列明 属性信息，…) CREATE TABLE customer(Frist_Name char(50),Last_Name char(50),Address char(100),City char(50),Country char(50),Brith_Date date) 数据库添加列语法: ALTER TABLE 表格名 ADD 添加的列名 列名属性信息 ALTER TABLE Coustomer Add AddCol char(50) NOT NULL 删除列语法: ALTER TABLE 表格名 DROP COLUMN 要删除的列名 ALTER TABLE Coustomer DROP COLUMN ReCol 删除表DROP TABLE 用户信息表 清除表格中的所有数据语法：TRUNCATE TABLE 表格名称 TRUNCATE TABLE customer_one 更改列名称语法: sp_rename ‘表格名.列名’,更改后的列名,’COLUMN’ sp_rename &apos;Coustomer.AddCol&apos;,ReCol ,&apos;COLUMN&apos; 插入语句语法：（单行插入） INSERT INTO 表格名(列名1,列名2，…) VALUES (列名1对应值,列名2对应值,…)语法：（多行行插入） INSERT INTO 表格名(列名1,列名2，…) VALUES (列名1对应值,列名2对应值,…),(列名1对应值,列名2对应值,…)… INSERT INTO customer(Frist_Name,Last_Name,Address,City,Country,Brith_Date) VALUES(&apos;f1&apos;,&apos;L1&apos;,&apos;A1&apos;,&apos;C1&apos;,&apos;COU1&apos;,NULL),(&apos;f2&apos;,&apos;L2&apos;,&apos;A2&apos;,&apos;C2&apos;,&apos;COU2&apos;,NULL) 查询数据语法 SELECT 列名 FROM 表格名 SELECT UserName FROM Coustomer SELECT UserName,City FROM Coustomer 去掉查找到重复的数据 SELECT DISTINCT Country FROM Coustomer 更改内容UPDATE TestTABLE SET name=&apos;6&apos; 关键字 WHERE 关键字:条件过滤 语法:SELECT “列名” FROM “表格名” WHERE “条件” SELECT UserName,City,Country FROM Coustomer WHERE Country=&apos;中国&apos; AND City=&apos;武汉&apos; IN 关键字1.与WHERE有多个相等的值时 SELECT UserName,City,Country FROM Coustomer WHERE Country IN (&apos;中国&apos;,&apos;jp&apos;) LIKE关键字 语法：SELECT 列名 FROM 表格名 WHERE 列名 LIKE{模式} SELECT UserName,City,Country FROM Coustomer WHERE Country LIKE&apos;%国&apos; OR Country LIKE&apos;%P&apos; ORDER BY 关键字ASC 从小到大，DESC 从大到小，默认是ASC 语法：SELECT 列名FROM 表格名WHERE 条件 ORDER BY 列名 [ASC,DESC] SELECT UserName,City,Country FROM Coustomer ORDER BY UserName DESC 函数 SELECT 函数(列名) FROM 表格名]]></content>
-    </entry>
-
-    
-    <entry>
-      <title></title>
-      <url>%2F2018%2F05%2F18%2FOSG%E5%88%9D%E6%AD%A5%2F</url>
-      <content type="text"><![CDATA[title: OSG初步date: 2018-05-18 22:59:24 tags:]]></content>
     </entry>
 
     

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-20T02:19:37.081Z</updated>
+  <updated>2018-06-04T14:38:34.967Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OSG场景的组织结构</title>
+    <link href="http://yoursite.com/2018/06/04/OSG%E5%9C%BA%E6%99%AF%E7%9A%84%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84/"/>
+    <id>http://yoursite.com/2018/06/04/OSG场景的组织结构/</id>
+    <published>2018-06-04T14:31:59.000Z</published>
+    <updated>2018-06-04T14:38:34.967Z</updated>
+    
+    <content type="html"><![CDATA[<p>OSG采用包围层次BVH,其中采用树结构保存数据。<br>OSG采用Node类来表达一个基本节点，也就是作为所有节点的基类，它需要一个BoundingSpherre类来表达自己的包围球形体。并且需要一些方法来更新包围球的大小。当节点发生变化时（删除、增加，改变自身包围球形状），需要重新计算该节点的包围球数据，并递归到根节点，以便维护场景BVH树的可用性。</p>
+<h2 id="osg-Node类"><a href="#osg-Node类" class="headerlink" title=" osg::Node类"></a> osg::Node类</h2><pre><code>Node()//默认构造函数
+void dirtyBound()\\提示更新节点的包围体
+const BoudingSpere&amp; getBound() const \\获取节点包围体
+BoudingSpere computerBound() const \\虚函数，计算节点包围体
+const ParentList getParents() const\\获取节点的父节点列表
+const Group* getParent(unsigned int i)const \\获取指定的父节点
+unsigned int getNumParents() const \\获取父节点数目
+void AddParent(Group *node) \\为当前节点追加一个父节点
+</code></pre><p><strong>强制重新计算并获取包围求数据</strong>   </p>
+<pre><code>node-&gt;dirtyBound();
+osg::getBoundingSphere&amp; bs=node-&gt;getBOund();
+</code></pre><h2 id="父节点与子节点关系"><a href="#父节点与子节点关系" class="headerlink" title=" 父节点与子节点关系"></a> 父节点与子节点关系</h2><p>一个场景树包含一个根节点、多级内部枝节节点，以及都哟个末端的叶子接待你。OSG场景为一种有向无环图(DAG)。</p>
+<p>在DAG层次中，多个父节点共享一个子节点的情况十分普遍，我们称为对这个子节点的“实例化”（Instance）。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;OSG采用包围层次BVH,其中采用树结构保存数据。&lt;br&gt;OSG采用Node类来表达一个基本节点，也就是作为所有节点的基类，它需要一个BoundingSpherre类来表达自己的包围球形体。并且需要一些方法来更新包围球的大小。当节点发生变化时（删除、增加，改变自身包围球形状
+    
+    </summary>
+    
+      <category term="OSG" scheme="http://yoursite.com/categories/OSG/"/>
+    
+    
+      <category term="场景图形BVH结构" scheme="http://yoursite.com/tags/%E5%9C%BA%E6%99%AF%E5%9B%BE%E5%BD%A2BVH%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
   
   <entry>
     <title>Python学习路线</title>
@@ -128,28 +164,6 @@ SELECT UserName,City FROM Coustomer
     
     
       <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2018/05/18/OSG%E5%88%9D%E6%AD%A5/"/>
-    <id>http://yoursite.com/2018/05/18/OSG初步/</id>
-    <published>2018-05-18T14:59:24.902Z</published>
-    <updated>2018-06-04T13:36:02.830Z</updated>
-    
-    <content type="html"><![CDATA[<hr>
-<p>title: OSG初步<br>date: 2018-05-18 22:59:24</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;hr&gt;
-&lt;p&gt;title: OSG初步&lt;br&gt;date: 2018-05-18 22:59:24&lt;/p&gt;
-&lt;h2 id=&quot;tags&quot;&gt;&lt;a href=&quot;#tags&quot; class=&quot;headerlink&quot; title=&quot;tags:&quot;&gt;&lt;/a&gt;tags:&lt;/h2&gt;
-    
-    </summary>
-    
     
   </entry>
   
