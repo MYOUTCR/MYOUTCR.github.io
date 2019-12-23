@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-23T12:49:31.542Z</updated>
+  <updated>2019-12-23T13:00:32.580Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://yoursite.com/2019/12/23/TemplateMethod/"/>
     <id>http://yoursite.com/2019/12/23/TemplateMethod/</id>
     <published>2019-12-23T15:00:30.000Z</published>
-    <updated>2019-12-23T12:49:31.542Z</updated>
+    <updated>2019-12-23T13:00:32.580Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>意图:</strong></p>
+    <content type="html"><![CDATA[<p><strong>意图:</strong>  </p>
 <ul>
 <li>定义一个操作中的算法骨架,而将一些步骤延迟到子类中。模板方法使得子类不改变一个算法的结构即可重定义该算法的某些特定步骤。</li>
 </ul>
-<p><strong>何时使用:</strong> </p>
+<p><strong>何时使用:</strong>  </p>
 <ul>
 <li>一些方法通用,却在每个子类中都重写了这一方法。</li>
 </ul>
@@ -70,12 +70,11 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;意图:&lt;/strong&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;意图:&lt;/strong&gt;  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;定义一个操作中的算法骨架,而将一些步骤延迟到子类中。模板方法使得子类不改变一个算法的结构即可重定义该算法的某些特定步骤。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;何时使用:&lt;/strong&gt; &lt;/p&gt;
-
+&lt;p&gt;&lt;strong&gt;何时使用:&lt;/strong&gt;  &lt;/
     
     </summary>
     
