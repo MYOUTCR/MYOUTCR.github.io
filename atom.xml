@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-04T14:41:47.564Z</updated>
+  <updated>2019-12-23T12:36:55.311Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,74 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Template Method</title>
+    <link href="http://yoursite.com/2019/12/23/TemplateMethod/"/>
+    <id>http://yoursite.com/2019/12/23/TemplateMethod/</id>
+    <published>2019-12-23T15:00:30.000Z</published>
+    <updated>2019-12-23T12:36:55.311Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>意图:</strong></p>
+<ul>
+<li>定义一个操作中的算法骨架,而将一些步骤延迟到子类中。模板方法使得子类不改变一个算法的结构即可重定义该算法的某些特定步骤。</li>
+</ul>
+<p><strong>何时使用:</strong> </p>
+<ul>
+<li>一些方法通用,却在每个子类中都重写了这一方法。</li>
+</ul>
+<p><strong>如何解决:</strong></p>
+<ul>
+<li>将这些通用方法抽象出来。</li>
+</ul>
+<p><strong>关键代码:</strong></p>
+<ul>
+<li>在抽象类实现,其他步骤在子类中实现。</li>
+</ul>
+<p><strong>应用实例:</strong></p>
+<p><strong>优点:</strong></p>
+<ul>
+<li>封装不变部分,扩展可变部分。</li>
+<li>提取公共代码便于维护。</li>
+<li>行为由父类控制,子类实现。</li>
+</ul>
+<p><strong>缺点:</strong></p>
+<ul>
+<li>每一个不同的实现都需要一个子类来实现,导致类的个数增加,系统更加庞大。</li>
+</ul>
+<p><strong>使用场景:</strong></p>
+<ul>
+<li>有多个子类共有的方法,且逻辑相同。</li>
+<li>重要的、复杂的方法,可以考虑使用模板方法。</li>
+</ul>
+<p><strong>注意事项:</strong></p>
+<ul>
+<li>为防止恶意操作,一般模板方法都加上final关键词。</li>
+</ul>
+<p><strong>实现:</strong></p>
+<ul>
+<li>创建一个定义操作Game抽象类,其中模板方法设置为final,这样它就不会被重写。ch1和ch1扩展了Game实体类，它们重写了抽象类的方法。</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">class</span> Game</div><div class="line">&#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">	Game() &#123;&#125;;</div><div class="line">	~Game() &#123;&#125;;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">play</span><span class="params">()</span> final</span></div><div class="line">	&#123;</div><div class="line">		initialize();</div><div class="line">		startPlay();</div><div class="line">		endPlay();</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">initialize</span><span class="params">()</span> </span>= <span class="number">0</span>;</div><div class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">startPlay</span><span class="params">()</span> </span>= <span class="number">0</span>;</div><div class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">endPlay</span><span class="params">()</span> </span>= <span class="number">0</span>;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;意图:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义一个操作中的算法骨架,而将一些步骤延迟到子类中。模板方法使得子类不改变一个算法的结构即可重定义该算法的某些特定步骤。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;何时使用:&lt;/strong&gt; &lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="设计模式" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>OSG场景的组织结构</title>

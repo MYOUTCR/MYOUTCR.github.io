@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2019/12/23/TemplateMethod/</loc>
+    <lastmod>2019-12-23T12:36:55.311Z</lastmod>
+    <data>
+        <display>
+        <title>Template Method</title>
+        <pubTime>2019-12-23T15:00:30.000Z</pubTime>
+        
+        <tag>设计模式</tag>
+         
+         
+           
+             
+              <breadCrumb title="设计模式" url="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/06/04/OSG%E5%9C%BA%E6%99%AF%E7%9A%84%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2018-06-04T14:41:47.564Z</lastmod>
     <data>
